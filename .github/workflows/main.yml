@@ -39,7 +39,7 @@ jobs:
         - name: Build and deploy Container App
           uses: azure/container-apps-deploy-action@v0
           with:
-           acrName: myregistry
+           acrName: ${{ secrets.REGISTRY_LOGIN_SERVER }}
            containerAppName: ${{ secrets.CONTAINER_APP }}
            resourceGroup: ${{ secrets.RESOURCE_GROUP }}
            imageToDeploy: ${{ secrets.REGISTRY_LOGIN_SERVER }}/sampleapp:${{ github.sha }}
