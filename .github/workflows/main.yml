@@ -29,6 +29,7 @@ jobs:
           with:
            acrName: workshop7reg
            acrUsername: ${{ secrets.REGISTRY_USERNAME }}
+           ingress: external
            acrPassword: ${{ secrets.REGISTRY_PASSWORD }}
            containerAppName: ${{ secrets.CONTAINER_APP }}
            resourceGroup: ${{ secrets.RESOURCE_GROUP }}
