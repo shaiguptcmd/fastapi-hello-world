@@ -25,4 +25,4 @@ Make sure you have installed the requirements found in requirements.txt in a vir
 uvicorn main:app --reload
 ```
 
-##Testing
+##Testinging
