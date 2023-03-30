@@ -11,6 +11,6 @@ app = FastAPI(
 def hello_world():
     return {"Hello": "World"}
 
-@app.get("/test")
-def hello_workshop():
-    return {"Hello": "Workshop"}
+@app.get("/items/{item_id}")
+def hello_workshop(item_id: int):
+    return {"item_id": item_id}
