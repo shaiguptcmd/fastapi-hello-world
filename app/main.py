@@ -7,10 +7,10 @@ app = FastAPI(
 ) 
 
 
-@app.get("/")
-def hello_world():
+@app.get("/hello")
+async def hello_world():
     return {"Hello": "World"}
 
 @app.get("/items/{item_id}")
-def hello_workshop(item_id: int):
+async def hello_workshop(item_id):
     return {"item_id": item_id}
